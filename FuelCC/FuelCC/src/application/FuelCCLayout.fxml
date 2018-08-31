@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FuelCCController">
+   <children>
+      <JFXButton fx:id="btnMpgToLkm" focusTraversable="false" layoutX="225.0" layoutY="30.0" prefHeight="120.0" prefWidth="150.0" styleClass="jfx-button" stylesheets="@FuelCCCSS.css" text="&gt; Convert &gt;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnLkmToMpg" focusTraversable="false" layoutX="225.0" layoutY="180.0" prefHeight="120.0" prefWidth="150.0" styleClass="jfx-button" stylesheets="@FuelCCCSS.css" text="&gt; Convert &gt;" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lbTitleMpgToLkm" prefHeight="30.0" prefWidth="600.0" styleClass="label-title" stylesheets="@FuelCCCSS.css" text="  Conversion from miles per galon to litres per 100 km">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutY="150.0" prefHeight="30.0" prefWidth="600.0" styleClass="label-title" stylesheets="@FuelCCCSS.css" text="  Conversion from litres per 100 km to miles per galon">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="30.0" prefHeight="30.0" prefWidth="225.0" text="Fuel consumption">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbResultLkm" alignment="CENTER" layoutX="375.0" layoutY="90.0" prefHeight="60.0" prefWidth="225.0" styleClass="label-result" stylesheets="@FuelCCCSS.css" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbResultMpg" alignment="CENTER" layoutX="375.0" layoutY="240.0" prefHeight="60.0" prefWidth="225.0" styleClass="label-result" stylesheets="@FuelCCCSS.css" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="60.0" prefHeight="30.0" prefWidth="225.0" text="[miles/galon]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="375.0" layoutY="30.0" prefHeight="30.0" prefWidth="225.0" text="Fuel consumption">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="180.0" prefHeight="30.0" prefWidth="225.0" text="Fuel consumption">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="375.0" layoutY="180.0" prefHeight="30.0" prefWidth="225.0" text="Fuel consumption">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbResultMPG" alignment="CENTER" layoutX="375.0" layoutY="210.0" prefHeight="30.0" prefWidth="225.0" text="[miles/galon]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="375.0" layoutY="60.0" prefHeight="30.0" prefWidth="225.0" text="[litres/100 km]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="210.0" prefHeight="30.0" prefWidth="225.0" text="[litres/100 km]">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfMilesPerGalon" alignment="CENTER" layoutY="90.0" prefHeight="60.0" prefWidth="225.0" promptText="Enter mpg here" styleClass="text-field" stylesheets="@FuelCCCSS.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfLitersPer100Kilometers" alignment="CENTER" layoutY="240.0" prefHeight="60.0" prefWidth="225.0" promptText="Enter l/100 km here" styleClass="text-field" stylesheets="@FuelCCCSS.css">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lbMpgWarning" alignment="CENTER" contentDisplay="CENTER" layoutY="90.0" prefHeight="15.0" prefWidth="225.0" styleClass="label-warning" stylesheets="@FuelCCCSS.css" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="lbLkmWarning" alignment="CENTER" contentDisplay="CENTER" layoutY="240.0" prefHeight="15.0" prefWidth="225.0" styleClass="label-warning" stylesheets="@FuelCCCSS.css" textAlignment="CENTER" textFill="RED" />
+   </children>
+</AnchorPane>

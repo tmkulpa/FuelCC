@@ -1,0 +1,41 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.button {
+	-fx-background-color: #0078D4;
+	-fx-text-fill: #ffffff;
+}
+
+.text-field {
+	-fx-background-color: #91c1e7;
+	-fx-text-fill: #ffffff;
+	-fx-highlight-text-fill: #ffffff;
+	-fx-prompt-text-fill: #ffffff;
+	-fx-background-radius: 0.0;
+}
+
+.label {
+	-fx-background-color: #fafafa;
+	-fx-text-fill: #000000;
+}
+
+.label-warning {
+	-fx-background-color: #91c1e7;
+	-fx-text-fill: #ff0000;
+}
+
+.label-title {
+	-fx-background-color: #b0bec5;
+	-fx-text-fill: #000000;
+}
+
+.jfx-button {
+	-fx-background-color: #0078D4;
+	-fx-text-fill: #ffffff;
+	-fx-background-radius: 0.0;
+}
+
+.label-result {
+	-fx-background-color: #91c1e7;
+	-fx-text-fill: #ffffff;
+}
+
